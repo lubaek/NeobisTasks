@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat',
+    sans-serif;
+    font-size: 16px;
+    background-color: #323232;
+      
+}
+
+header {
+    padding: 50px 0;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    font-size: 3rem;
+    background: linear-gradient(to bottom, #ffbf00, #ffbf00 60%, #fdfdfd 60%, #fdfdfd 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-repeat: no-repeat;
+    transition: background 0.2s ease-out;
+    white-space: nowrap;
+}
+
+.title-span {
+    position: relative;
+}
+
+.title-span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 15px;
+    background: #ffbf00;
+    bottom: 9px;
+    transition: all 0.2s ease-out;
+}
+
+h1:hover {
+    background-position: 0 11px;
+}
+
+.title-span:hover:before {
+    transform: translateY(15px)
+}
+
+.container {
+    margin: 0 auto;
+    width: 100px;
+    min-width: 1170px;
+    padding: 0 100px;
+}
+
+.item {
+    margin-bottom: 50px;
+    padding: 30px;
+    transition: all .2s ease;
+    background-color: rgb(252, 252, 252);
+}
+
+.item:hover {
+-webkit-box-shadow: 2px 2px 20px 9px rgba(247, 209, 17, 1);
+-moz-box-shadow: 2px 2px 20px 9px rgba(247, 209, 17, 1);
+box-shadow: 2px 2px 20px 9px rgba(247, 209, 17, 1);
+}
+
+.title {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.text {
+    padding: 20px 0;
+}
+
+.button, .link {
+    margin: 20px 0;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+.answer span {
+    font-weight: 700;
+}
+
+.button {
+    padding: 10px 25px;
+    font-family: 'Montserrat',
+    sans-serif;
+    font-size: 16px;
+    border: 1px solid #323232;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #ffbf00;
+    border: 1px solid #ffbf00;
+    color: #fff;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: 700;
+    color: #323232;
+    position: relative;
+}
+.link:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 30px;
+    left: 0;
+    background-color: #ffbf00;
+    opacity: 0;
+    transition: all .2s ease-in;
+}
+
+.link:hover.link:after {
+  opacity: 1;
+}

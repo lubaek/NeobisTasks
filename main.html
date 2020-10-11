@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practical Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <span class="title-span"><h1>JavaScript Practical Tasks</h1></span>
+    </header>
+
+    
+    <div class="container">
+        <div class="item">
+            <h3 class="title">task #1</h3>
+            <p class="text">for (var i = 0; i < 10; i++) { <br> setTimeout(function() { console.log(i); }<br> }; <br>
+            What will the console output and why?
+            </p>
+            <p class="answer">
+                <span>Answer:</span> There will be printed "10" ten times.
+                The anonymous function stores a reference to i, and when
+                the console.log function is called, the for loop has already
+                finished its work, and i will contain 10.
+            </p>
+        </div>
+        <div class="item">
+            <h3 class="title">task #2_1</h3>
+            <p class="text">Write a JavaScript program to display the current day and time in the following format.<br>  
+                Sample Output : <br>
+                Today is : Friday. <br>
+                Current time is : 4 PM : 50 : 22
+            </p>
+            <button class="button" onclick="currentDateTime()">Solution</button>   
+        </div>
+        <div class="item">
+            <h3 class="title">task #2_2</h3>
+            <p class="text">Write a JavaScript function that reverse a number.<br> <br>
+                    Example x = 32243; <br>
+                    Expected Output : 34223
+            </p>
+            <button class="button" onclick="reverseNum()">Solution</button>
+        </div>
+        <div class="item">
+            <h3 class="title">task #2_3</h3>
+            <p class="text">Write a JavaScript program
+                to calculate the factorial of a number.
+                In mathematics, the factorial of a non-negative
+                integer n, denoted by n!, is the product of all
+                positive integers less than or equal to n. <br>
+                For example, 5! = 5 x 4 x 3 x 2 x 1 = 120 	
+            </p>
+            <button class="button" onclick="findFactorial()">Solution</button>
+        </div>
+        <div class="item">
+            <h3 class="title">task #2_4</h3>
+            <p class="text">Write a JavaScript program that accept two integers and display the larger.</p>
+            <button class="button" onclick="findLarger()">Solution</button>
+        </div>
+        <div class="item">
+            <h3 class="title">task #2_5</h3>
+            <p class="text">Write a simple JavaScript program to join all elements
+                of the following array into a string. <br>
+                Sample array : myColor = ["Red", "Green", "White", "Black"]; <br>
+                Expected Output : <br>
+                "Red,Green,White,Black" <br>
+                "Red+Green+White+Black" <br>
+            </p>
+            <p class="answer">
+                <span>Hint:</span> Open console and call there a function <span>joinToString(array)</span> <br>
+                For example: joinToString(["Red", "Green", "White", "Black"])
+            </p>
+        </div>
+        <div class="item">
+            <h3 class="title">task #2_6</h3>
+            <p class="text">Write a JavaScript function to get the month name from a particular date. <br>
+                Test Data : <br>
+                console.log(month_name(new Date("10/11/2009"))); <br>
+                console.log(month_name(new Date("11/13/2014"))); <br>
+                Output : <br>
+                "October" <br>
+                "November" <br>
+            </p>
+            <p class="answer">
+                <span>Hint:</span> Open console and call there a function <span>month_name(date)</span> <br>
+                For example: month_name(new Date("10/11/2009"))
+            </p>          
+        </div>
+        <div class="item">
+            <h3 class="title">task #2_7</h3>
+            <p class="text">Write a JavaScript program to test the first character of a string is uppercase or not
+            </p>
+            <button class="button" onclick="checkUppercase()">Solution</button>     
+        </div>
+        <div class="item">
+            <h3 class="title">task #2_8</h3>
+            <p class="text">Write a JavaScript program to draw a smile
+            </p>
+             <a href="task_2/task2_8.html" class="link" target="_blank">Click here to see result</a>        
+        </div>
+
+        <div class="item">
+            <h3 class="title">task 1</h3>
+            <p class="text">
+                На странице есть верстка. <br> <br>
+                 Необходимо поочередно обратиться к каждому тэгу в нужном порядке,
+               и вывести их содержимое в консоль, чтобы получилась осмысленная скороговорка. <br> <br>
+                <div id="string-1">Ядра в вёдра, выдру в тундру!</div>
+                <div id="string-2">Выдрав с выдры в тундре гетры</div>
+                <div id="string-3">В недрах тундры, выдры в гетрах </div>
+                <div id="string-4">Вытру гетрой выдре морду </div>
+                <div id="string-5">Тырят в вёдра ядра кедров!</div>
+                <div id="string-6">Вытру выдрой ядра кедров</div> <br> <br>
+              
+            </p>
+            <p class="answer">
+                <span>Hint:</span> Click button then open console to see the result
+            </p>
+            <button class="button" onclick="correctPatter()">Solution</button>
+        </div>
+        <div class="item">
+            <h3 class="title">task 2</h3>
+            <div class="element">Element 1</div>
+            <div class="element">Element 2</div>
+            <div class="element">Element 3</div>
+            <div class="element">Element 4</div>
+            <div class="element">Element 5</div>
+            <div class="element">Element 6</div>
+            <p class="text">С помощью JS необходимо первым трем  элементам задать красный цвет текста, а остальным трем - зеленый.</p>
+             <button class="button" onclick="changeColor()">Solution</button>      
+        </div>        
+        <div class="item">
+            <h3 class="title">task 3</h3>
+            <p class="text"> На странице есть контейнер. необходимо с помощью цикла добавить в него пять задач
+                (элементов &ltli>) с классом task и текстом, взятым из массива задач из пяти элементов: <br>
+                var tasks = ['Buy lemonade', 'Make toasts', 'Repair car', 'Play games', 'Pet a cat'];
+            </p>
+            <p class="answer"><span>Result:</span></p>
+            <ol id="todo-list"></ol>
+             <button class="button" onclick="addLi()">Solution</button>      
+        </div>       
+        <div class="item">
+            <h3 class="title">task 4</h3>
+            <p class="text">На странице есть разметка. Необходимо с помощью JavaScript
+                вставить после каждого тега &ltp> тег &lthr>, для визуального отделения абзацев друг от друга.
+            </p>
+             <a href="task4/task4.html" class="link" target="_blank">Click here to see result</a>        
+        </div>
+        <div class="item">
+            <h3 class="title">task 5</h3>
+            <div id="cart-items">
+                <div class="cart-item">Milk 1 l.<span class="qty">x 2</span></div>
+                <div class="cart-item">Cola 1.5 l. <span class="qty">x 1</span></div>
+                <div class="cart-item">Bread<span class="qty">x 2</span></div>
+                <div class="cart-item">Cheese<span class="qty">x 1</span></div>
+                <div class="cart-item">Chocolate bar<span class="qty">x 3</span></div>
+            </div>
+            <p class="text">Необходимо с помощью JavaScript удалить элемент "Cola 1.5 l" и заменить товар "Chocolate bar" на "Canned Fish", количеством 4 штуки.
+            </p>
+            <button class="button" onclick="changeItem()">Solution</button>     
+        </div>        
+        <div class="item">
+            <h3 class="title">task 6</h3>
+            <p class="text">Напишите программу для создания списка задач, которые будет вводить пользователь: <br> <br>
+                Для каждого пункта: <br>
+                Запрашивайте содержимое пункта у пользователя с помощью prompt. <br>
+                Создавайте пункт и добавляйте его к UL. <br>
+                Процесс прерывается, когда пользователь нажимает "Отмена" или вводит пустую строку.
+            </p>
+            <p class="answer"><span>Result: </span></p>
+            <div id="task6"></div>
+            <button class="button" onclick="addTask()">Solution</button>     
+        </div> 
+    </div>
+    
+    <script src="task_2.js"></script>
+</body>
+</html>
